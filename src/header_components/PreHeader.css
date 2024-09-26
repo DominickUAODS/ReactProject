@@ -1,0 +1,44 @@
+.pre-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #143c8a; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.pre-header-info, .pre-header-info-text {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-style: thin;
+}
+
+.pre-header-info {
+    text-decoration: underline;
+    text-decoration-color: white; 
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+
+  .pre-header-info.animate {
+    animation: slide-in 1s ease-in-out;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

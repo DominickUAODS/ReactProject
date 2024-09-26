@@ -1,0 +1,11 @@
+.bottom-header hr{
+    color: #f6f6f6e4;
+    opacity: 0.5;
+}
+
+.bottom-header-button
+{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
