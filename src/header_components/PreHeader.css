@@ -7,7 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding:0;
+    height: auto;
+
 }
 
 .pre-header-info, .pre-header-info-text {
@@ -18,12 +20,21 @@
 }
 
 .pre-header-info {
-    text-decoration: underline;
-    text-decoration-color: white; 
     color: white;
     display: inline-block;
     text-decoration: none;
     position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px; 
+}
+
+.pre-header-info:hover {
+  text-decoration: underline; 
+  text-decoration-color: white;
+  text-decoration-thickness: 1px; 
+  color: white;
 }
 
 
@@ -42,3 +53,8 @@
     }
   }
   
+  img{
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+  }

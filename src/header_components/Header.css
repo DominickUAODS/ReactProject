@@ -16,8 +16,8 @@
 }
 
 
-button,
-.search-input {
+
+.search-input, a {
     margin: 0 5px; 
     padding: 10px; 
     height: auto;
@@ -35,3 +35,34 @@ button,
     padding: 10px;
     width: 100%;
 }
+
+a {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    color: inherit;
+    gap: 5px; 
+  }
+  
+
+  a span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+    color: black;
+    text-decoration-color: black;
+    text-decoration-thickness: 1px; 
+  }
+
+  img
+  {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+  }

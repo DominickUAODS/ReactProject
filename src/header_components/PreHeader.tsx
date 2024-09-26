@@ -29,6 +29,7 @@ export default function PreHeader() {
     <div className="pre-header">
       <Link to={currentLink.link} className="pre-header-info animate">
         <span className="pre-header-info-text">{currentLink.name}</span>
+        <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="20" height="20" aria-label="" src="src/assets/img/icon-white-arrow-right.png"></img>
       </Link>
     </div>
   );

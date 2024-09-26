@@ -7,12 +7,26 @@ export default function Header() {
     <div className="header">
       <PreHeader />
       <div className="main-header">
-        <button className="home-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jysk_logo.svg/768px-Jysk_logo.svg.png?20220503114541" width="81" height="37" alt="JYSK" className="logo"/></button>
-        <button className="menu-button">Menu</button>
-        <input className="search-input" type="text" placeholder="Search..." />
-        <button className="like-button">Like</button>
-        <button className="login-button">Login</button>
-        <button className="cart-button">Cart</button>
+      <a className="home-button" href = "/">
+  <img src="src/assets/img/jysk-logo.svg" width="81" height="37" alt="JYSK" className="logo" />
+</a>
+<a className="menu-a" href="#">
+  <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-menu.svg" />
+  <span>Menu</span>
+</a>
+<input className="search-input" type="text" placeholder="Search..." />
+<a className="like-a" href="#">
+  <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-heart.png" />
+  <span>Обране</span>
+</a>
+<a className="login-a" href="#">
+  <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-login.png" />
+  <span>Login</span>
+</a>
+<a className="cart-a" href="#">
+  <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-cart.png" />
+  <span>Cart</span>
+</a>
       </div>
       <BottomHeader/>
       </div>
