@@ -1,7 +1,10 @@
+import CategoryList from "../main_components/CategoryList";
 
 const HomeJysk = () => {
-    return <div>Home Page</div>;
-  };
-  
-  export default HomeJysk;
-  
+	return (
+		<>
+			<CategoryList />
+			Home Page</>);
+};
+
+export default HomeJysk;

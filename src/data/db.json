@@ -1,0 +1,86 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"name": "Спальня",
+			"imageUrl": "/images/bedroom.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Ванна",
+			"imageUrl": "/images/bathroom.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Офіс",
+			"imageUrl": "/images/office.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Вітальня",
+			"imageUrl": "/images/livingroom.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Кухня та їдальня",
+			"imageUrl": "/images/kitchen_dining.jpg"
+		},
+		{
+			"id": 6,
+			"name": "Зберігання",
+			"imageUrl": "/images/storage.jpg"
+		},
+		{
+			"id": 7,
+			"name": "Для вікон",
+			"imageUrl": "/images/windows.jpg"
+		},
+		{
+			"id": 8,
+			"name": "Для саду",
+			"imageUrl": "/images/garden.webp"
+		},
+		{
+			"id": 9,
+			"name": "Для дому",
+			"imageUrl": "/images/home.jpg"
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "ALTA",
+			"categoryId": 3,
+			"description": "Ковдра ALTA тепла 135x200см 1200г",
+			"price": 1400,
+			"imageUrl": "/images/alta-blanket.jpg",
+			"rating": 3,
+			"availability": "В наявності в 98 магазинах",
+			"delivery": "Доставка"
+		},
+		{
+			"id": 2,
+			"name": "FALKETIND",
+			"categoryId": 3,
+			"description": "Ковдра FALKETIND помірна 135x200см 300г",
+			"price": 3000,
+			"oldPrice": 3999,
+			"imageUrl": "/images/falketind-medium.jpg",
+			"rating": 5,
+			"availability": "В наявності в 99 магазинах",
+			"delivery": "Доставка"
+		},
+		{
+			"id": 3,
+			"name": "FALKETIND",
+			"categoryId": 3,
+			"description": "Ковдра FALKETIND тепла 135x200см 750г",
+			"price": 5500,
+			"oldPrice": 6999,
+			"imageUrl": "/images/falketind-warm.jpg",
+			"rating": 5,
+			"availability": "В наявності в 99 магазинах",
+			"delivery": "Доставка"
+		}
+	]
+}

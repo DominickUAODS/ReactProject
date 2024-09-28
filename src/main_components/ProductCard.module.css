@@ -1,0 +1,83 @@
+.card {
+	border: 1px solid #e1e1e1;
+	border-radius: 8px;
+	padding: 16px;
+	max-width: 300px;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+	position: relative;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #ddd;
+}
+
+.discountBadge {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: red;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.info {
+	padding: 8px 0;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 8px 0;
+}
+
+.description {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 12px;
+}
+
+.priceSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 8px 0;
+}
+
+.oldPrice {
+	text-decoration: line-through;
+	color: #999;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.price {
+	font-size: 20px;
+	color: #333;
+}
+
+.rating {
+	margin: 8px 0;
+}
+
+.starFilled {
+	color: gold;
+}
+
+.starEmpty {
+	color: lightgray;
+}
+
+.availability,
+.delivery {
+	font-size: 14px;
+	color: #666;
+}

@@ -1,6 +1,6 @@
 export default function OnSale() {
 
-    return (
-      <p>Sale</p>
-    )
+	return (
+		<p>Sale</p>
+	)
 }
