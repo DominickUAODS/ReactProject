@@ -10,7 +10,7 @@ const ProductCard: React.FC<ProductType> = ({ name, description, price, oldPrice
 		<div className={styles.card}>
 			<div className={styles.imageWrapper}>
 				{discountPercentage && <span className={styles.discountBadge}>-{discountPercentage}%</span>}
-				<img src={imageUrl} alt={name} className={styles.image} />
+				<img src={`http://localhost:3000${imageUrl}`} alt={name} className={styles.image} />
 			</div>
 			<div className={styles.info}>
 				<h3 className={styles.name}>{name}</h3>

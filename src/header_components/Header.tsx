@@ -5,11 +5,12 @@ import PreHeader from "./PreHeader";
 import MenuSidebar from "../main_components/MenuSideBar";
 
 export default function Header() {
+	// menu
 	const [isMenuSidebarOpen, setMenuSidebarOpen] = useState(false);
+	const toggleMenuSidebar = () => { setMenuSidebarOpen(!isMenuSidebarOpen); };
+	const closeMenuSidebar = () => { setMenuSidebarOpen(false); };
 
-	const toggleMenuSidebar = () => {
-	  setMenuSidebarOpen(!isMenuSidebarOpen);
-	};
+	// login
 
 	return (
 		<div className="header">
@@ -37,7 +38,7 @@ export default function Header() {
 				</a>
 			</div>
 			<BottomHeader />
-			{isMenuSidebarOpen && <MenuSidebar />}
+			<MenuSidebar isOpen={isMenuSidebarOpen} onClose={closeMenuSidebar} />
 		</div>
 	);
 }

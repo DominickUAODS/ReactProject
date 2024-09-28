@@ -1,10 +1,13 @@
+import { useParams } from "react-router-dom";
 import ProductsByCategory from "../main_components/ProductsByCategory";
 import CategoryType from "../types/CategoryType";
 
-const Category: React.FC<CategoryType> = ({ id }) => {
+const Category: React.FC<CategoryType> = () => {
+	const { id } = useParams<{ id: string }>();
+
 	return (
 		<>
-			<ProductsByCategory selectedCategory={id}/>
+			<ProductsByCategory selectedCategory={Number(id)}/>
 		</>
 	);
 };

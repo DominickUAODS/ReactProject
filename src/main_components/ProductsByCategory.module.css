@@ -1,6 +1,7 @@
 .productList {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	width: 70%;
+	justify-content: center;
 	padding: 20px;
 }
