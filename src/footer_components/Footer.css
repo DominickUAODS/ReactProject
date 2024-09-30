@@ -4,7 +4,23 @@
 }
 
 .footer-content {
-    display: flex; 
-    flex: 1; 
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row; 
+    width: 100%;
 }
 
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column; 
+        width: 100%;
+        padding: 0;
+    }
+
+    .category-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+}

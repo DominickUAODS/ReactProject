@@ -67,3 +67,53 @@ a {
     min-height: 0;
     display: block;
   }
+
+  @media (max-width: 528px) {
+    .main-header {
+      display: flex; 
+      align-items: center; 
+      flex-wrap: wrap; 
+    }
+  
+    .main-header > a, 
+    .main-header > .search-input {
+      margin: 0 5px; 
+    }
+  
+    .search-input {
+      width: 100%; 
+      margin-top: 10px; 
+      font-size: 14px;
+    }
+  
+    .search-input::placeholder {
+      font-size: 14px; 
+    }
+
+    .menu-a span,
+    .like-a span,
+    .login-a span,
+    .cart-a span {
+      display: none; 
+    }
+  
+ 
+    .menu-a img,
+    .like-a img,
+    .login-a img,
+    .cart-a img {
+      margin: 0 auto; 
+    }
+  
+
+    .home-button img,
+    .menu-a img,
+    .like-a img,
+    .login-a img,
+    .cart-a img {
+      margin-bottom: 0; 
+    }
+  }
+  
+  
+  
