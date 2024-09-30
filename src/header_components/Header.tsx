@@ -12,7 +12,7 @@ export default function Header() {
 </a>
 <a className="menu-a" href="#">
   <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-menu.svg" />
-  <span>Menu</span>
+  <span>Меню</span>
 </a>
 <input className="search-input" type="text" placeholder="Search..." />
 <a className="like-a" href="#">
@@ -21,11 +21,11 @@ export default function Header() {
 </a>
 <a className="login-a" href="#">
   <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-login.png" />
-  <span>Login</span>
+  <span>Вхід</span>
 </a>
 <a className="cart-a" href="#">
   <img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-cart.png" />
-  <span>Cart</span>
+  <span>Кошик</span>
 </a>
       </div>
       <BottomHeader/>

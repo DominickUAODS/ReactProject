@@ -1,0 +1,148 @@
+.category-list
+{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    justify-content: center;
+    padding-right: 15px;
+    text-align: left; 
+}
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+    text-wrap: nowrap;
+  }
+
+  .footer__heading 
+  {
+    font-weight: bold;
+    font-size: 20px;
+    align-self: flex-start;
+    padding-left: 15px;
+
+  }
+  
+  a span {
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    text-wrap: nowrap;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .category-list li {
+    margin-bottom:0; 
+    line-height: 1.0; 
+    font-weight: lighter  !important;
+    text-align: left
+  }
+  .category-list li a {
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: left; 
+    display: inline-block;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: black;
+    text-decoration-thickness: 0.7px; 
+  }
+  
+  .category-list a {
+    text-decoration: none; 
+    color: black; 
+  }
+  
+  .category-list a:hover {
+    text-decoration: underline;
+    color: black; 
+  }
+  
+  .category-list ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+  
+  .jsk-for-b, .customer-serv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  .jsk-for-b p, .customer-serv p {
+    margin: 0; 
+    padding: 0;
+  }
+ .info-block
+ {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%;
+ }
+
+ .info-block a
+ {
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: left; 
+    display: inline-block;
+    color: black;
+    margin: 0;
+    padding: 0;
+ }
+
+ .info-block a :hover{
+  text-decoration: underline;
+    color: black;
+    text-decoration-color: black;
+    text-decoration-thickness: 0.7px; 
+ }
+  
+  .company-details-text p {
+    margin: 0; 
+  }
+  
+  .company-details-text strong {
+    display: inline;
+  }
+  
+  .footer__contact-information {
+    text-align: left; 
+  }
+  
+  .footer__contact-information p {
+    display: block;
+  }
+  
+  .info-block .footer__heading
+  {
+    padding-left: 0;
+  }
+
+  .test {
+    display: flex; 
+    padding: 0; 
+    margin: 0;
+  }
+  
+  .test li {
+    list-style: none; 
+    margin-right: 10px; 
+  }
+  
+
+  .test li:last-child {
+    margin-right: 0;
+  }
+  
+  

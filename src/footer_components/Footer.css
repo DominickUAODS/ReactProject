@@ -1,0 +1,10 @@
+.footer {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.footer-content {
+    display: flex; 
+    flex: 1; 
+}
+
