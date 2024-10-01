@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CategoryType from "../types/CategoryType";
 import MenuElement from "./MenuElement";
 import { createPortal } from "react-dom";
-import styles from './MenuSidebar.module.css';
+import styles from './MenuSideBar.module.css';
 
 const MenuSidebar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
 

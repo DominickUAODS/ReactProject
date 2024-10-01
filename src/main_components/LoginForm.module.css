@@ -1,0 +1,104 @@
+.loginForm {
+	width: 400px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.inputGroup {
+	margin-bottom: 15px;
+}
+
+.inputGroup label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.inputGroup input {
+	width: 95%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.errorInput {
+	border-color: red;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.passwordWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.passwordWrapper input {
+	flex: 1;
+}
+
+.showPasswordButton {
+	background: none;
+	border: none;
+	color: #007bff;
+	cursor: pointer;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.showPasswordButton:hover {
+	text-decoration: underline;
+}
+
+.loginButton {
+	width: 100%;
+	padding: 10px;
+	background-color: #0056b3;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.loginButton:hover {
+	background-color: #004494;
+}
+
+.forgotPassword {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.forgotPassword a {
+	color: #007bff;
+}
+
+.forgotPassword a:hover {
+	text-decoration: underline;
+}
+
+.createAccountButton {
+	padding: 10px;
+	background-color: transparent;
+	border: 1px solid #0056b3;
+	color: #0056b3;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.createAccountButton:hover {
+	background-color: #0056b3;
+	color: white;
+}

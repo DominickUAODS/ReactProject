@@ -2,7 +2,8 @@ import { useState } from "react";
 import BottomHeader from "./BottomHeader";
 import "./Header.css";
 import PreHeader from "./PreHeader";
-import MenuSidebar from "../main_components/MenuSideBar";
+import MenuSideBar from "../main_components/MenuSideBar";
+import LoginSideBar from "../main_components/LoginSideBar";
 
 export default function Header() {
 	// menu
@@ -11,6 +12,10 @@ export default function Header() {
 	const closeMenuSidebar = () => { setMenuSidebarOpen(false); };
 
 	// login
+	const [isLoginSidebarOpen, setLoginSidebarOpen] = useState(false);
+	const toggleLoginSidebar = () => { setLoginSidebarOpen(!isLoginSidebarOpen); };
+	const closeLoginSidebar = () => { setLoginSidebarOpen(false); };
+	//
 	return (
 		<div className="header">
 			<PreHeader />
@@ -27,7 +32,7 @@ export default function Header() {
 					<img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-heart.png" />
 					<span>Обране</span>
 				</a>
-				<a className="login-a" href="#">
+				<a className="login-a" href="#" onClick={toggleLoginSidebar}>
 					<img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src="src/assets/img/icon-login.png" />
 					<span>Вхід</span>
 				</a>
@@ -37,7 +42,8 @@ export default function Header() {
 				</a>
 			</div>
 			<BottomHeader />
-			<MenuSidebar isOpen={isMenuSidebarOpen} onClose={closeMenuSidebar} />
+			<MenuSideBar isOpen={isMenuSidebarOpen} onClose={closeMenuSidebar} />
+			<LoginSideBar isOpen={isLoginSidebarOpen} onClose={closeLoginSidebar} />
 		</div>
 	);
 }

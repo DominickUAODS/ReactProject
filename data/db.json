@@ -82,5 +82,12 @@
 			"availability": "В наявності в 99 магазинах",
 			"delivery": "Доставка"
 		}
+	],
+	"users": [
+		{
+			"id": 1,
+			"email": "admin@gmail.com",
+			"password": "pas159"
+		}
 	]
 }
