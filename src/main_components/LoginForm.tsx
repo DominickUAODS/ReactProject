@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./LoginForm.module.css";
 import LoginFormType from "../types/LoginFormType";
-
+import { useNavigate } from "react-router-dom";
 
 const LoginForm: React.FC = () => {
 	const { register, handleSubmit, formState: { errors }, clearErrors } = useForm<LoginFormType>();
 	const [showPassword, setShowPassword] = useState(false);
 	const [loginError, setLoginError] = useState("");
+	const navigate = useNavigate();
 
 	const validateEmail = (email: string) => {
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,6 +26,7 @@ const LoginForm: React.FC = () => {
 			if (users.length === 0) {
 				setLoginError("Невірний email або пароль");
 			} else {
+				alert("Вхід успішний");
 				console.log("Вхід успішний", users[0]);
 				localStorage.setItem("user", JSON.stringify(users[0]));
 			}
@@ -63,26 +65,16 @@ const LoginForm: React.FC = () => {
 						})}
 						className={errors.password ? styles.errorInput : ""}
 					/>
-					<button
-						type="button"
-						onClick={() => setShowPassword(!showPassword)}
-						className={styles.showPasswordButton}
-					>
-						{showPassword ? "Сховати " : "Показати"}
-					</button>
+					<button type="button" onClick={() => setShowPassword(!showPassword)} className={styles.showPasswordButton}>{showPassword ? "Сховати " : "Показати"}</button>
 				</div>
 				{errors.password && <div className={styles.error}>{errors.password.message}</div>}
 			</div>
 
 			{loginError && <div className={styles.error}>{loginError}</div>}
 
-			<button type="submit" className={styles.loginButton}>
-				Увійти
-			</button>
+			<button type="submit" className={styles.loginButton}>Увійти</button>
 
-			<div className={styles.forgotPassword}>
-				<a href="#">Забули пароль?</a>
-			</div>
+			<div className={styles.forgotPassword}><a href="#">Забули пароль?</a></div>
 
 			<div>
 				<h3>Створити новий обліковий запис</h3>
@@ -92,7 +84,7 @@ const LoginForm: React.FC = () => {
 					<li>Додавайте товари до списку бажань</li>
 					<li>Зберігайте інформацію для майбутніх покупок</li>
 				</ul>
-				<button className={styles.createAccountButton}>Створити обліковий запис</button>
+				<button className={styles.createAccountButton} type="button" onClick={() => navigate("/register")}>Створити обліковий запис</button>
 			</div>
 		</form>
 	);

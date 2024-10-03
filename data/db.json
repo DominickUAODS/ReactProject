@@ -1,102 +1,117 @@
 {
-	"categories": [
-		{
-			"id": 1,
-			"name": "Спальня",
-			"imageUrl": "/images/bedroom.jpg"
-		},
-		{
-			"id": 2,
-			"name": "Ванна",
-			"imageUrl": "/images/bathroom.jpg"
-		},
-		{
-			"id": 3,
-			"name": "Офіс",
-			"imageUrl": "/images/office.jpg"
-		},
-		{
-			"id": 4,
-			"name": "Вітальня",
-			"imageUrl": "/images/livingroom.jpg"
-		},
-		{
-			"id": 5,
-			"name": "Кухня та їдальня",
-			"imageUrl": "/images/kitchen_dining.jpg"
-		},
-		{
-			"id": 6,
-			"name": "Зберігання",
-			"imageUrl": "/images/storage.jpg"
-		},
-		{
-			"id": 7,
-			"name": "Для вікон",
-			"imageUrl": "/images/windows.jpg"
-		},
-		{
-			"id": 8,
-			"name": "Для саду",
-			"imageUrl": "/images/garden.webp"
-		},
-		{
-			"id": 9,
-			"name": "Для дому",
-			"imageUrl": "/images/home.jpg"
-		}
-	],
-	"products": [
-		{
-			"id": 1,
-			"name": "ALTA",
-			"categoryId": 1,
-			"description": "Ковдра ALTA тепла 135x200см 1200г",
-			"price": 1400,
-			"imageUrl": "/products/alta-blanket.jpg",
-			"rating": 3,
-			"isAvialibale": true,
-			"availability": "В наявності в 98 магазинах",
-			"delivery": "Доставка",
-			"isInDelivery": true,
-			"fullDesc": "Тепла ковдра розміром 135х200 см із натуральним наповненням із 90% пера білої качки/10% пуху білої качки, 1200 г. Прошивка квадратами забезпечує рівномірний розподіл наповнювача. Чохол зі 100% бавовни. Якість наповнення: 200. Можна прати за температури 60°C"
-		},
-		{
-			"id": 2,
-			"name": "FALKETIND",
-			"categoryId": 1,
-			"description": "Ковдра FALKETIND помірна 135x200см 300г",
-			"price": 3000,
-			"oldPrice": 3999,
-			"imageUrl": "/products/falketind-medium.jpg",
-			"rating": 5,
-			"isAvialibale": false,
-			"availability": "Не має в наявності",
-			"delivery": "Доставка",
-			"isInDelivery": true,
-			"fullDesc": "Тепла ковдра розміром 135х200 см із натуральним наповненням із 90% пера білої качки/10% пуху білої качки, 1200 г. Прошивка квадратами забезпечує рівномірний розподіл наповнювача. Чохол зі 100% бавовни. Якість наповнення: 200. Можна прати за температури 60°C"
-		},
-		{
-			"id": 3,
-			"name": "FALKETIND",
-			"categoryId": 1,
-			"description": "Ковдра FALKETIND тепла 135x200см 750г",
-			"price": 5500,
-			"oldPrice": 6999,
-			"imageUrl": "/products/falketind-warm.jpg",
-			"rating": 5,
-			"isAvialibale": true,
-			"availability": "В наявності в 99 магазинах",
-			"delivery": "Не має можливості замовити на доставку",
-			"isInDelivery": false,
-			"fullDesc": "Тепла ковдра розміром 135х200 см із натуральним наповненням із 90% пера білої качки/10% пуху білої качки, 1200 г. Прошивка квадратами забезпечує рівномірний розподіл наповнювача. Чохол зі 100% бавовни. Якість наповнення: 200. Можна прати за температури 60°C"
-		}
-	],
-	"users": [
-		{
-			"id": 1,
-			"email": "admin@gmail.com",
-			"password": "pas159"
-		}
-	]
+  "categories": [
+    {
+      "id": "1",
+      "name": "Спальня",
+      "imageUrl": "/images/bedroom.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Ванна",
+      "imageUrl": "/images/bathroom.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Офіс",
+      "imageUrl": "/images/office.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Вітальня",
+      "imageUrl": "/images/livingroom.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Кухня та їдальня",
+      "imageUrl": "/images/kitchen_dining.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Зберігання",
+      "imageUrl": "/images/storage.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Для вікон",
+      "imageUrl": "/images/windows.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Для саду",
+      "imageUrl": "/images/garden.webp"
+    },
+    {
+      "id": "9",
+      "name": "Для дому",
+      "imageUrl": "/images/home.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "ALTA",
+      "categoryId": 1,
+      "description": "Ковдра ALTA тепла 135x200см 1200г",
+      "price": 1400,
+      "imageUrl": "/products/alta-blanket.jpg",
+      "rating": 3,
+      "isAvialibale": true,
+      "availability": "В наявності в 98 магазинах",
+      "delivery": "Доставка",
+      "isInDelivery": true,
+      "fullDesc": "Тепла ковдра розміром 135х200 см із натуральним наповненням із 90% пера білої качки/10% пуху білої качки, 1200 г. Прошивка квадратами забезпечує рівномірний розподіл наповнювача. Чохол зі 100% бавовни. Якість наповнення: 200. Можна прати за температури 60°C"
+    },
+    {
+      "id": "2",
+      "name": "FALKETIND",
+      "categoryId": 1,
+      "description": "Ковдра FALKETIND помірна 135x200см 300г",
+      "price": 3000,
+      "oldPrice": 3999,
+      "imageUrl": "/products/falketind-medium.jpg",
+      "rating": 5,
+      "isAvialibale": false,
+      "availability": "Не має в наявності",
+      "delivery": "Доставка",
+      "isInDelivery": true,
+      "fullDesc": "Тепла ковдра розміром 135х200 см із натуральним наповненням із 90% пера білої качки/10% пуху білої качки, 1200 г. Прошивка квадратами забезпечує рівномірний розподіл наповнювача. Чохол зі 100% бавовни. Якість наповнення: 200. Можна прати за температури 60°C"
+    },
+    {
+      "id": "3",
+      "name": "FALKETIND",
+      "categoryId": 1,
+      "description": "Ковдра FALKETIND тепла 135x200см 750г",
+      "price": 5500,
+      "oldPrice": 6999,
+      "imageUrl": "/products/falketind-warm.jpg",
+      "rating": 5,
+      "isAvialibale": true,
+      "availability": "В наявності в 99 магазинах",
+      "delivery": "Не має можливості замовити на доставку",
+      "isInDelivery": false,
+      "fullDesc": "Тепла ковдра розміром 135х200 см із натуральним наповненням із 90% пера білої качки/10% пуху білої качки, 1200 г. Прошивка квадратами забезпечує рівномірний розподіл наповнювача. Чохол зі 100% бавовни. Якість наповнення: 200. Можна прати за температури 60°C"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "confirmEmail": "admin@gmail.com",
+      "password": "pas159",
+      "firstName": "123",
+      "lastName": "456",
+      "termsAccepted": true,
+      "subscribeToNews": false
+    },
+    {
+      "id": "ab2a",
+      "email": "test@test.com",
+      "confirmEmail": "test@test.com",
+      "password": "123456",
+      "firstName": "123",
+      "lastName": "456",
+      "termsAccepted": true,
+      "subscribeToNews": false
+    }
+  ]
 }
