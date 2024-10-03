@@ -1,6 +1,6 @@
 import "./BottomHeader.css";
-//import geoIcon from "src/assets/img/icon-geo.png"; 
-//import arrowDownIcon from "src/assets/img/icon-arrow-down.png";
+import geoIcon from "../assets/img/icon-geo.png"; 
+import arrowDownIcon from "../assets/img/icon-arrow-down.png";
 
 export default function BottomHeader() {
 	return (
@@ -14,7 +14,7 @@ export default function BottomHeader() {
 						aria-hidden="true"
 						width="20"
 						height="20"
-						src="src/assets/img/icon-geo.png"
+						src={geoIcon}
 						alt="Geo marker"
 					/>
 					<span>Виберіть магазин Jysk</span>
@@ -24,7 +24,7 @@ export default function BottomHeader() {
 						aria-hidden="true"
 						width="10"
 						height="10"
-						src="src/assets/img/icon-arrow-down.png"
+						src={arrowDownIcon}
 						alt="Arrow down"
 					/>
 				</a>

@@ -9,6 +9,9 @@ type ProductType = {
 	availability: string;
 	delivery: string;
 	categoryId: number | string;
+	isInDelivery: boolean;
+	isAvialibale: boolean;
+	fullDesc: string;
 };
 
 export default ProductType;

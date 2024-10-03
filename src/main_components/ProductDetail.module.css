@@ -1,0 +1,246 @@
+.PageProdDet
+{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.productPage
+{
+  
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.productPageBlock1
+{
+  margin-right: 20px;
+}
+
+.productPageBlock2
+{
+  display: flex;
+  flex-direction: column;
+  gap:2px;
+}
+
+.productPageBlock2 h1{
+  display: inline;
+  margin: 0 10px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.actualPrice
+{
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.oldPrice {
+	text-decoration: line-through;
+	color: #999;
+	font-size: 14px;
+  margin: 0;
+}
+
+.desc
+{
+  margin: 0;
+}
+
+.rating {
+  margin: 0;
+}
+
+.starFilled {
+	color: gold;
+}
+
+.starEmpty {
+	color: lightgray;
+}
+
+
+.productFamilySelect
+{
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.blockPickUp, .blockDelivery
+{
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  width: 150%;;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.blockDelivery
+{
+  margin-bottom: 15px;
+}
+
+.deliveryBlock
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.spanRadio
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttonsToCart
+{
+  display: flex;
+  margin-top: 20px;
+}
+
+.btnProductQuantity
+{
+  padding: 0;
+  margin: 0;
+  
+}
+
+.inputQ
+{
+  width:25%;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  text-align: center; 
+}
+
+.buttonGoToCart
+{
+  margin: 0;
+  display: flex;
+  width:100%;
+  font-size: 18px;
+  background-color: #143c8a;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.Desc
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.DescMain
+{
+  font-size: 38px;
+  color: #143c8a;
+  font-weight: bold;
+
+}
+
+.DescFull
+{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 528px) {
+  .PageProdDet {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .productPage {
+    flex-direction: column; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .productPageBlock1 {
+    margin-right: 0;
+    margin-bottom: 15px; 
+    width: 100%;
+  }
+
+  .productPageBlock1 img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .productPageBlock2 {
+    gap: 5px; 
+    margin-bottom: 15px; 
+  }
+
+  .productPageBlock2 h1 {
+    font-size: 20px; 
+  }
+
+  .actualPrice {
+    font-size: 18px; 
+  }
+
+  .oldPrice {
+    font-size: 12px; 
+  }
+
+  .desc {
+    font-size: 14px; 
+  }
+
+  .productFamilySelect {
+    font-size: 20px; 
+  }
+
+  .blockPickUp, .blockDelivery {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px; 
+  }
+
+  .deliveryBlock {
+    font-size: 16px; }
+
+  .buttonsToCart {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .inputQ {
+    padding: 5px;
+    font-size: 12px; 
+  }
+  .btnProductQuantity
+  {
+    margin-bottom: 15px;
+    align-self: center;
+  }
+  .buttonGoToCart {
+    font-size: 16px; 
+    padding: 10px;
+  }
+
+  .Desc {
+    margin-bottom: 30px; 
+  }
+
+  .DescMain {
+    font-size: 28px;
+  }
+
+  .DescFull {
+    font-size: 16px;
+  }
+}

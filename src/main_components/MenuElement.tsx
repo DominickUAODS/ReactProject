@@ -1,5 +1,5 @@
 import React from "react";
-import "./MenuElement.module.css";
+import styles from "./MenuElement.module.css";
 import CategoryType from "../types/CategoryType";
 import { useNavigate } from "react-router-dom";
 
@@ -15,15 +15,15 @@ const MenuElement: React.FC<MenuElementProps> = ({ categories }) => {
 	};
 
 	return (
-		<div className="menusidebar">
-			<div className="logo">
-				<img src="http://localhost:3000/images/jysk-logo.svg" width="81" height="37" alt="JYSK" />
+		<div className={styles.menusidebar}>
+			<div className={styles.logo}>
+			<img src="http://localhost:3000/images/jysk-logo.svg"  width="81" height="37" alt="JYSK" />
 			</div>
 			<ul>
 				{categories.map(category => (
 					<li key={category.id} onClick={() => handleClick(category.id)}>
 						<span>{category.name}</span>
-						<span className="arrow">〉</span>
+						<span className={styles.arrow}>〉</span>
 					</li>
 				))}
 			</ul>

@@ -1,6 +1,5 @@
 import BannerComponent from "../home_components/BannerComponent";
 import CategoryList from "../home_components/CategoryList";
-import styles from "./CategoryList.module.css";
 import "./HomeJysk.css"
 
 const HomeJysk = () => {
