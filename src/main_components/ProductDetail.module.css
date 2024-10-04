@@ -79,6 +79,18 @@
 	padding: 7px;
 }
 
+
+
+.radioBtnPickup input
+{
+  width:30px;
+}
+
+.radioBtnDelivery input
+{
+  width:30px;
+}
+
 .blockDelivery {
 	margin-bottom: 15px;
 }

@@ -1,4 +1,6 @@
-type ProductType = {
+import ProductType from "./ProductType";
+
+type ProductToCartType = {
 	product: ProductType;
 	quantity: number;
 	commonSum: number;
@@ -6,4 +8,4 @@ type ProductType = {
 	pickUp: boolean;
 };
 
-export default ProductType;
+export default ProductToCartType;
