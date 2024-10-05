@@ -1,0 +1,28 @@
+.fpc {
+    position: relative;
+}
+
+.filterForm {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.filterForm input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.filterForm button {
+    background-color: #034795;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
