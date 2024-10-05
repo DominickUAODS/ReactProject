@@ -41,7 +41,7 @@ export default function Header() {
 					<img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src={iconLogin} />
 					<span>Вхід</span>
 				</a>
-				<a className="cart-a" href="#">
+				<a className="cart-a" href="/category/:categoryId/:productId/details">
 					<img className="svg-w3-wishlist v-2" role="img" aria-hidden="true" width="24" height="24" aria-label="" src={iconCart} />
 					<span>Кошик</span>
 				</a>
