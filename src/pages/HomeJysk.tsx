@@ -4,15 +4,15 @@ import "./HomeJysk.css"
 
 const HomeJysk = () => {
 	return (
-		<div className ="homePage">
+		<div className="homePage">
 			<div className="banner">
-				<BannerComponent/>
+				<BannerComponent />
 			</div>
 			<div className="category-list">
-			<CategoryList />
+				<CategoryList />
 			</div>
 		</div>
-		);
+	);
 };
 
 export default HomeJysk;

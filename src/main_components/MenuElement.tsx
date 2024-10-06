@@ -8,6 +8,7 @@ interface MenuElementProps {
 }
 
 const MenuElement: React.FC<MenuElementProps> = ({ categories }) => {
+	const apiHost = import.meta.env.VITE_APP_HOST;
 	const navigate = useNavigate();
 
 	const handleClick = (id: number | string | undefined) => {
@@ -17,7 +18,8 @@ const MenuElement: React.FC<MenuElementProps> = ({ categories }) => {
 	return (
 		<div className={styles.menusidebar}>
 			<div className={styles.logo}>
-			<img src="http://localhost:3000/images/jysk-logo.svg"  width="81" height="37" alt="JYSK" />
+				{/* <img src="http://localhost:3000/images/jysk-logo.svg" width="81" height="37" alt="JYSK" /> */}
+				<img src={`${apiHost}/images/jysk-logo.svg`} width="81" height="37" alt="JYSK" />
 			</div>
 			<ul>
 				{categories.map(category => (

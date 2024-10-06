@@ -4,16 +4,20 @@ import ProductType from "../types/ProductType";
 import { useNavigate } from "react-router-dom";
 
 const ProductCard: React.FC<ProductType> = ({ categoryId, id, name, description, price, oldPrice, imageUrl, rating, availability, delivery }) => {
+	const apiHost = import.meta.env.VITE_APP_HOST;
 	const navigate = useNavigate();
 	const discountPercentage = oldPrice ? Math.round(((oldPrice - price) / oldPrice) * 100) : null;
+	
 	const handleCardClick = () => {
 		navigate(`/category/${categoryId}/${id}`);
 	};
+	
 	return (
 		<div className={styles.card} onClick={handleCardClick} style={{ cursor: "pointer" }}>
 			<div className={styles.imageWrapper}>
 				{discountPercentage && <span className={styles.discountBadge}>-{discountPercentage}%</span>}
-				<img src={`http://localhost:3000${imageUrl}`} alt={name} className={styles.image} />
+				{/* <img src={`http://localhost:3000${imageUrl}`} alt={name} className={styles.image} /> */}
+				<img src={`${apiHost}${imageUrl}`} alt={name} className={styles.image} />
 			</div>
 			<div className={styles.info}>
 				<h3 className={styles.name}>{name}</h3>

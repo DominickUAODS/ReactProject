@@ -1,33 +1,29 @@
-.cartItem{
+.cartItem {
     display: flex;
     margin: 0 0 10px;
     border-bottom: 1px solid #ececec;
     padding: 10px;
     align-items: center;
-    width:100%;
-
+    width: 100%;
 }
 
-.cartItem img
-{
+.cartItem img {
     width: 50px;
     height: 50px;
 }
-.productInfo
-{
+
+.productInfo {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
 }
 
-.itemDecs
-{
+.itemDecs {
     margin: 0;
     padding: 0;
 }
 
-.buttonDelete
-{
+.buttonDelete {
     width: 4%;
     font-size: 10px;
     height: 50%;
@@ -40,26 +36,24 @@
     justify-content: center;
 }
 
-.buttonDelete
-{
+.buttonDelete {
     align-self: center;
 }
 
-.buttonsToCart
-{
+.buttonsToCart {
     display: flex;
     height: 50%;
-    width:12%;
+    width: 12%;
     justify-content: center;
     margin-left: 40px;
 }
-.productInfo p
-{
+
+.productInfo p {
     margin: 0;
     padding: 0;
 }
-.buttonsToCart input
-{
+
+.buttonsToCart input {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -67,22 +61,20 @@
 
 }
 
-.buttonsToCart button
-{
+.buttonsToCart button {
     height: 80%;
     margin-top: 9px;
     background-color: white;
 }
 
-.totalPr
-{
+.totalPr {
     margin-left: 40px;
 }
 
 @media (max-width: 528px) {
     .cartItem {
-        flex-direction: row; 
-        align-items: center; 
+        flex-direction: row;
+        align-items: center;
     }
 
     .cartItem img {
@@ -91,25 +83,25 @@
     }
 
     .productInfo {
-        flex-direction: column; 
-        font-size: 12px; 
+        flex-direction: column;
+        font-size: 12px;
     }
 
     .buttonDelete {
         width: 10%;
-        font-size: 12px; 
+        font-size: 12px;
     }
 
     .buttonsToCart {
         width: 20%;
-        margin-left: 10px; 
+        margin-left: 10px;
     }
 
     .totalPr {
-        margin-left: 10px; 
+        margin-left: 10px;
     }
-    .buttonsToCart button
-    {
-        width:2%;
+
+    .buttonsToCart button {
+        width: 2%;
     }
 }

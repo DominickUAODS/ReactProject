@@ -1,5 +1,5 @@
 import "./BottomHeader.css";
-import geoIcon from "../assets/img/icon-geo.png"; 
+import geoIcon from "../assets/img/icon-geo.png";
 import arrowDownIcon from "../assets/img/icon-arrow-down.png";
 
 export default function BottomHeader() {

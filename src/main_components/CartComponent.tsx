@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import styles from "./CartComponent.module.css"; 
+import styles from "./CartComponent.module.css";
 import ProductToCartType from "../types/ProductToCart";
 
 interface CartComponentProps {
     item: ProductToCartType;
-    updateCartItem: (updatedItem: ProductToCartType) => void; 
+    updateCartItem: (updatedItem: ProductToCartType) => void;
 }
 
 const CartComponent: React.FC<CartComponentProps> = ({ item, updateCartItem }) => {
     const [quantity, setQuantity] = useState(item.quantity);
-    const [totalPrice, setTotalPrice] = useState(item.commonSum); 
+    const [totalPrice, setTotalPrice] = useState(item.commonSum);
 
     useEffect(() => {
         if (item) {
@@ -49,11 +49,11 @@ const CartComponent: React.FC<CartComponentProps> = ({ item, updateCartItem }) =
         <div className={styles.cartItem}>
             <button className={styles.buttonDelete} onClick={handleDelete}>
                 <span >Delete</span></button>
-            <img 
-                src={`http://localhost:3000${item.product.imageUrl}`} 
-                alt={item.product.name} 
-                width="150" 
-                height="100" 
+            <img
+                src={`http://localhost:3000${item.product.imageUrl}`}
+                alt={item.product.name}
+                width="150"
+                height="100"
             />
             <div className={styles.productInfo}>
                 <h3 className={styles.itemDecs}>{item.product.description}</h3>
@@ -64,28 +64,28 @@ const CartComponent: React.FC<CartComponentProps> = ({ item, updateCartItem }) =
                 )}
             </div>
             <div className={styles.buttonsToCart}>
-                    <button
-                        type="button"
-                        className="button button-minus"
-                        data-test="orderLineQuantityDecrease"
-                        onClick={decreaseQuantity} 
-                    >
-                        -
-                    </button>
-                    <input
-                        type="number"
-                        value={quantity} 
-                        className={styles.inputQ}
-                        readOnly 
-                    />
-                    <button
-                        type="button"
-                        className="button button-plus"
-                        data-test="orderLineQuantityIncrease"
-                        onClick={increaseQuantity} 
-                    >
-                        +
-                    </button>
+                <button
+                    type="button"
+                    className="button button-minus"
+                    data-test="orderLineQuantityDecrease"
+                    onClick={decreaseQuantity}
+                >
+                    -
+                </button>
+                <input
+                    type="number"
+                    value={quantity}
+                    className={styles.inputQ}
+                    readOnly
+                />
+                <button
+                    type="button"
+                    className="button button-plus"
+                    data-test="orderLineQuantityIncrease"
+                    onClick={increaseQuantity}
+                >
+                    +
+                </button>
             </div>
             <p className={styles.totalPr}>{totalPrice} ГРН</p>
         </div>

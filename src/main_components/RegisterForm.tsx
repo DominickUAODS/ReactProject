@@ -5,6 +5,8 @@ import RegisterFormType from '../types/RegisterFormType';
 import { useNavigate } from 'react-router-dom';
 
 const RegisterForm: React.FC = () => {
+	const usersUrl = import.meta.env.VITE_APP_USERS;
+
 	const {
 		register,
 		handleSubmit,
@@ -18,7 +20,8 @@ const RegisterForm: React.FC = () => {
 	const onSubmit: SubmitHandler<RegisterFormType> = async (data) => {
 		try {
 			// Check if email already exists in the db.json
-			const emailCheckResponse = await fetch(`http://localhost:3000/users?email=${data.email}`);
+			// const emailCheckResponse = await fetch(`http://localhost:3000/users?email=${data.email}`);
+			const emailCheckResponse = await fetch(`${usersUrl}?email=${data.email}`);
 			const existingUsers = await emailCheckResponse.json();
 
 			if (existingUsers.length > 0) {
@@ -31,7 +34,8 @@ const RegisterForm: React.FC = () => {
 			}
 
 			// Proceed to register if email does not exist
-			const response = await fetch('http://localhost:3000/users', {
+			// const response = await fetch('http://localhost:3000/users', {
+			const response = await fetch(usersUrl, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -51,7 +55,7 @@ const RegisterForm: React.FC = () => {
 
 	const watchEmail = watch('email');
 
-	const handleCancel = () => { navigate('/');	};
+	const handleCancel = () => { navigate('/'); };
 
 	return (
 		<div className={styles.container}>
@@ -122,16 +126,11 @@ const RegisterForm: React.FC = () => {
 				</div>
 
 				{/* Submit Button */}
-				<button type="submit" className={styles.submitButton}>
-					Створити обліковий запис
-				</button>
+				<button type="submit" className={styles.submitButton}>Створити обліковий запис</button>
+				<button type="button" className={styles.cancelButton} onClick={handleCancel}>Скасувати</button>
 
-				<button type="button" className={styles.cancelButton} onClick={handleCancel}>
-					Скасувати
-				</button>
-
-			</form>
-		</div>
+			</form >
+		</div >
 	);
 };
 

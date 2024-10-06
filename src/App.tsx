@@ -8,8 +8,7 @@ import ProductDetail from './main_components/ProductDetail'
 import LoginForm from './main_components/LoginForm'
 import RegisterForm from './main_components/RegisterForm'
 import Cart from './pages/Cart'
-//import ProductsByCategory from './main_components/ProductsByCategory'
-//import CategoryList from './home_components/CategoryList'
+import SearchResultsPage from './main_components/SearchResultsPage'
 
 function App() {
 	return (
@@ -22,8 +21,9 @@ function App() {
 						<Route path="/category/:id" element={<Category />} />
 						<Route path="/category/:categoryId/:productId" element={<ProductDetail />} />
 						<Route path="/category/:categoryId/:productId/details" element={<Cart />} />
-						<Route path="/login" element={<LoginForm />} />
+						<Route path="/login" element={<LoginForm onClose={function (): void { }} />} />
 						<Route path="/register" element={<RegisterForm />} />
+						<Route path="/search" element={<SearchResultsPage />} />
 					</Routes>
 				</div>
 				<Footer />

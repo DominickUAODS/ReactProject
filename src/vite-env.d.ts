@@ -4,6 +4,7 @@ interface ImportMetaEnv {
 	readonly VITE_APP_HOST: string
 	readonly VITE_APP_CATEGORIES: string
 	readonly VITE_APP_PRODUCTS: string
+	readonly VITE_APP_USERS: string
 	// more env variables...
 }
 

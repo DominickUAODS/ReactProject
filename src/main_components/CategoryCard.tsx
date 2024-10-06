@@ -5,7 +5,7 @@ import CategoryType from "../types/CategoryType";
 
 const CategoryCard: React.FC<CategoryType> = ({ id, name, imageUrl }) => {
 	const navigate = useNavigate();
-
+	const apiHost = import.meta.env.VITE_APP_HOST;
 	// const handleClick:MouseEventHandler = (e:MouseEvent<HTMLButtonElement>) => {
 	// 	const target = e.target as HTMLButtonElement;
 	// 	const id = target.dataset.id;
@@ -19,7 +19,8 @@ const CategoryCard: React.FC<CategoryType> = ({ id, name, imageUrl }) => {
 	return (
 		<div className={styles.card} onClick={handleClick}>
 			<div className={styles.categoryName}>{name}</div>
-			<img src={`http://localhost:3000${imageUrl}`} alt={name} className={styles.image} />
+			{/* <img src={`http://localhost:3000${imageUrl}`} alt={name} className={styles.image} /> */}
+			<img src={`${apiHost}${imageUrl}`} alt={name} className={styles.image} />
 			
 		</div>
 	);

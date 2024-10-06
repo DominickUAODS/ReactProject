@@ -3,52 +3,43 @@
 	flex-direction: column;
 	width: 100%;
 	justify-content: center;
-	padding-left:10%;
-	padding-right:10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .productsByCat {
- display:flex;
- flex-direction: row;
- flex-wrap:wrap;
- gap:20px;
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
-.filters
-{
+.filters {
 	display: flex;
 	align-items: baseline;
 	margin-left: 25px;
 }
 
-.ctFilter
-{
+.ctFilter {
 	width: 100%;
 	margin-left: 40px;
 }
 
-
-
-
-.productCard
-{
+.productCard {
 	margin-right: 0;
 }
 
-@media (max-width: 528px)
-{
-	.productList
-	{
+@media (max-width: 528px) {
+	.productList {
 		padding: 0;
 		margin: 0;
 	}
-	.productsByCat
-	{
+
+	.productsByCat {
 		justify-content: center;
 	}
-	.ctFilter
-	{
+
+	.ctFilter {
 		margin-left: 10px;
 	}
 }

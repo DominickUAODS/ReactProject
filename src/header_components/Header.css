@@ -15,13 +15,20 @@
 	padding-right: 10%;
 }
 
+.search-form {
+	display: flex;
+	align-items: center;
+}
+
 .search-input,
 a {
+	flex: 1;
 	margin: 0 5px;
 	padding: 10px;
 	height: auto;
 	padding: 10px;
 	width: 20%;
+	margin-right: 10px;
 }
 
 .search-input {
@@ -31,7 +38,11 @@ a {
 	box-shadow: none;
 	height: auto;
 	padding: 10px;
-	width: 100%;
+	min-width: 150px;
+}
+
+.search-form button {
+	white-space: nowrap;
 }
 
 a {
@@ -42,7 +53,6 @@ a {
 	color: inherit;
 	gap: 5px;
 }
-
 
 a span {
 	display: inline-block;

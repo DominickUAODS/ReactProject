@@ -4,7 +4,9 @@ import styles from "./LoginForm.module.css";
 import LoginFormType from "../types/LoginFormType";
 import { useNavigate } from "react-router-dom";
 
-const LoginForm: React.FC = () => {
+// const LoginForm: React.FC = () => {
+const LoginForm: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+	const usersUrl = import.meta.env.VITE_APP_USERS;
 	const { register, handleSubmit, formState: { errors }, clearErrors } = useForm<LoginFormType>();
 	const [showPassword, setShowPassword] = useState(false);
 	const [loginError, setLoginError] = useState("");
@@ -20,7 +22,8 @@ const LoginForm: React.FC = () => {
 		setLoginError("");
 
 		try {
-			const response = await fetch(`http://localhost:3000/users?email=${data.email}&password=${data.password}`);
+			// const response = await fetch(`http://localhost:3000/users?email=${data.email}&password=${data.password}`);
+			const response = await fetch(`${usersUrl}?email=${data.email}&password=${data.password}`);
 			const users = await response.json();
 
 			if (users.length === 0) {
@@ -35,6 +38,11 @@ const LoginForm: React.FC = () => {
 		}
 	};
 
+	const handleRegisterClick = () => {
+		onClose();
+		navigate("/register");
+	};
+
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles.loginForm}>
 			<h2>Вхід</h2>
@@ -45,7 +53,7 @@ const LoginForm: React.FC = () => {
 					type="email"
 					id="email"
 					{...register("email", {
-						required: "Це поле обов\"язкове",
+						required: "Це поле обов\'язкове",
 						validate: validateEmail
 					})}
 					className={errors.email ? styles.errorInput : ""}
@@ -84,7 +92,8 @@ const LoginForm: React.FC = () => {
 					<li>Додавайте товари до списку бажань</li>
 					<li>Зберігайте інформацію для майбутніх покупок</li>
 				</ul>
-				<button className={styles.createAccountButton} type="button" onClick={() => navigate("/register")}>Створити обліковий запис</button>
+				{/* <button className={styles.createAccountButton} type="button" onClick={() => navigate("/register")}>Створити обліковий запис</button> */}
+				<button className={styles.createAccountButton} type="button" onClick={handleRegisterClick}>Створити обліковий запис</button>
 			</div>
 		</form>
 	);

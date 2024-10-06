@@ -17,9 +17,8 @@ const Cart: React.FC = () => {
     }
 
     const handleGoBack = () => {
-        navigate(-1); 
+        navigate(-1);
     };
-
 
     const totalSum = cartItems.reduce((acc, item) => acc + item.commonSum, 0);
 
@@ -34,21 +33,22 @@ const Cart: React.FC = () => {
             );
         }
     };
+    
     return (
         <div className={styles.cartPage}>
             {cartItems.map((item, index) => (
-                <CartComponent  updateCartItem={updateCartItem} key={index} item={item} />
+                <CartComponent updateCartItem={updateCartItem} key={index} item={item} />
             ))}
-        <div className={styles.infoCart}>
-            <div className={styles.infoCartText}>
-            <p>Усього: {totalSum} ГРН</p>
-            <p>Доставка 12-18 робочих днів</p>
-            <button className={styles.GoTo}>Продовжити</button>
+            <div className={styles.infoCart}>
+                <div className={styles.infoCartText}>
+                    <p>Усього: {totalSum} ГРН</p>
+                    <p>Доставка 12-18 робочих днів</p>
+                    <button className={styles.GoTo}>Продовжити</button>
+                </div>
+                <div className={styles.infoCartBtns}>
+                    <button className={styles.GoBack} onClick={handleGoBack}>Продовжити покупки</button>
+                </div>
             </div>
-            <div className={styles.infoCartBtns}>
-        <button className={styles.GoBack} onClick={handleGoBack}>Продовжити покупки</button>
-        </div>
-        </div>
         </div>
     );
 };

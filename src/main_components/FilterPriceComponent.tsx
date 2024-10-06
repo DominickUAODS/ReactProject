@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import styles from "./FilterPriceComponent.module.css"; 
+import styles from "./FilterPriceComponent.module.css";
 
 interface FilterPriceProps {
     onApplyFilter: (minPrice: number, maxPrice: number) => void;
 }
 
 const FilterPriceComponent: React.FC<FilterPriceProps> = ({ onApplyFilter }) => {
-    const [isExpanded, setIsExpanded] = useState(false); 
+    const [isExpanded, setIsExpanded] = useState(false);
     const [minPrice, setMinPrice] = useState<number | "">("");
-    const [maxPrice, setMaxPrice] = useState<number | "">(""); 
-    
+    const [maxPrice, setMaxPrice] = useState<number | "">("");
+
     const handleApplyFilter = () => {
-        onApplyFilter(Number(minPrice), Number(maxPrice)); 
-        setIsExpanded(false); 
+        onApplyFilter(Number(minPrice), Number(maxPrice));
+        setIsExpanded(false);
     };
 
     return (

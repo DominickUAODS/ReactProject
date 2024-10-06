@@ -6,12 +6,10 @@
 }
 
 .productPage {
-
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 40px;
 	margin-top: 40px;
-
 }
 
 .productPageBlock1 {
@@ -78,8 +76,6 @@
 	flex-direction: column;
 	padding: 7px;
 }
-
-
 
 .radioBtnPickup input
 {

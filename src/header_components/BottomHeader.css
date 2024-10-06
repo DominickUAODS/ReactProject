@@ -1,22 +1,19 @@
-.bottom-header hr{
+.bottom-header hr {
     color: #f6f6f6e4;
     opacity: 0.5;
 }
 
-.bottom-header-a
-{
+.bottom-header-a {
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 
-.btn-link
-{
-    align-items: center; 
-    justify-content: center; 
-    text-decoration: none; 
+.btn-link {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     color: inherit;
-    gap: 5px; 
+    gap: 5px;
     display: flex;
 }

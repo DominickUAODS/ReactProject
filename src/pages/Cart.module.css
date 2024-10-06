@@ -1,31 +1,28 @@
-.cartPage
-{
+.cartPage {
     padding-left: 10%;
     padding-right: 30%;
     margin-bottom: 50px;
 }
-.infoCart
-{
+
+.infoCart {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     justify-content: flex-start;
 }
 
-.infoCartText
-{
+.infoCartText {
     display: flex;
     align-self: flex-end;
     flex-direction: column;
 }
 
-.infoCartText p{
+.infoCartText p {
     margin: 0;
     padding: 0;
 }
 
-.GoTo
-{
+.GoTo {
     margin-top: 20px;
     background: linear-gradient(#034795, #143c8a);
     color: white;
@@ -34,36 +31,36 @@
 
 @media (max-width: 528px) {
     .cartPage {
-        padding-left: 5%;   
-        padding-right: 5%; 
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .infoCart {
-        flex-direction: column; 
-        align-items: center;     
-        width: 100%;           
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .infoCartText {
-        align-self: stretch;   
-        width: 100%;            
-        text-align: center;     
+        align-self: stretch;
+        width: 100%;
+        text-align: center;
     }
 
     .infoCartText p {
-        margin: 10px 0;        
+        margin: 10px 0;
         padding: 0;
     }
 
     .GoBack {
-        width: 100%;            
-        padding: 10px 0;       
-        font-size: 16px;      
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
     }
 
     .GoTo {
-        width: 100%;           
-        padding: 10px 0;       
-        font-size: 16px;       
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
     }
 }

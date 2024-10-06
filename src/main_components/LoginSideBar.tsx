@@ -6,6 +6,7 @@ import LoginForm from "./LoginForm";
 const LoginSideBar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
 
 	const modalNode: HTMLElement | null = document.getElementById("modalLoginSidebar");
+	
 	const handleModalClick = (e: React.MouseEvent) => {
 		e.stopPropagation();
 	};
@@ -14,7 +15,8 @@ const LoginSideBar: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOp
 		<div className="background" onClick={onClose}>
 			<div className={`${styles.menusidebar} ${isOpen ? styles.open : ''}`} onClick={handleModalClick}>
 				<button className={styles.modal__close} onClick={onClose}>&times;</button>
-				<LoginForm />
+				{/* <LoginForm /> */}
+				<LoginForm onClose={onClose} />
 			</div>
 		</div>,
 		modalNode
